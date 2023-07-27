@@ -1,0 +1,661 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Montserrat:wght@300;400;500&family=Nunito:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --main-color: #ff6600;
+  --gry-color: #8a898e;
+  --blue-color: #0b1b35;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: #0b1b35;
+}
+button {
+  font-size: 18px !important;
+  font-weight: 300 !important;
+}
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Nunito", sans-serif;
+}
+p {
+  font-family: inherit;
+}
+/* Target the scrollbar track */
+::-webkit-scrollbar {
+  width: 5px; /* Width of the scrollbar */
+}
+
+/* Target the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background-color: var(--blue-color);
+  border-radius: 5px; /* Rounded corners for the thumb */
+}
+
+/* Target the scrollbar track */
+::-webkit-scrollbar-track {
+  background-color: var(--gry-color); /* Color of the track */
+}
+.container {
+  margin: 60px 150px;
+  /* height: 100vh; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container h3 {
+  color: var(--gry-color);
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.container h1 {
+  color: var(--blue-color);
+  font-size: 40px;
+  text-transform: capitalize;
+}
+/* HEADER SECTION */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 10px 20px;
+}
+
+.logo img {
+  max-height: 49px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28.5px;
+}
+
+nav li {
+  margin-right: 60px;
+}
+
+nav li:last-child {
+  margin-right: 0;
+}
+
+li a {
+  text-decoration: none;
+  color: #000000;
+  cursor: pointer;
+  display: block;
+  border-bottom: 2px solid transparent;
+  /* padding: 6px; */
+}
+
+li a:hover {
+  border-bottom: 2px solid var(--main-color);
+  transition: 0.3s linear;
+}
+.user-actions {
+  display: flex;
+  align-items: center;
+}
+
+.signup-btn {
+  color: #ffffff;
+  padding: 10px 18px;
+  border: 2px solid;
+  border: 2px solid;
+  border-radius: 5px;
+  margin-left: 15px;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+  background-color: var(--main-color);
+}
+
+.login-btn {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+}
+.signup-btn:hover {
+  background-color: #e8801e; /* Change the background color when hovered over */
+  color: #ffffff; /* Change the text color when hovered over (optional) */
+}
+/* HERO SECTION */
+.parent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.box2 img {
+  width: 100%;
+  height: 550px;
+  margin: 0 auto;
+  display: block;
+}
+
+.box h1 {
+  font-weight: 900;
+  color: var(--blue-color);
+  margin-bottom: 12px;
+  text-transform: capitalize;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 65px;
+}
+.box h1 span {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.box h1 span::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 12px;
+  background: var(--main-color);
+  left: 0%;
+  top: 78%;
+}
+.box h1,
+.box p {
+  margin-bottom: 12px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.box {
+  width: 50%;
+  height: 100%;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  background: none;
+  border: none;
+}
+
+.btns {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  /* background: #000; */
+  width: fit-content;
+}
+.item {
+  width: fit-content;
+  font-weight: normal;
+}
+.item:hover img {
+  -webkit-animation: rotate-90-cw 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: rotate-90-cw 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.item button {
+  width: 100%;
+  padding: 12px 20px;
+  border: 1px solid black;
+  background-color: var(--main-color);
+  color: white;
+  border: none;
+  text-transform: capitalize;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.item button:hover {
+  transition: 0.5s linear;
+  background: #ff8833;
+}
+.section-two {
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  /* margin-bottom: 50px; */
+}
+
+.cards {
+  margin: 25px 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 45px;
+  /* background: #000; */
+}
+
+.cards .card {
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  flex-direction: column;
+  width: 300px;
+  padding: 20px;
+  height: 340px;
+  border-radius: 28px;
+  background: #fff;
+  box-shadow: 0px 2.767256498336792px 2.2138051986694336px 0px
+      rgba(0, 0, 0, 0.02),
+    0px 6.650102138519287px 5.32008171081543px 0px rgba(0, 0, 0, 0.03),
+    0px 12.521552085876465px 10.017241477966309px 0px rgba(0, 0, 0, 0.04),
+    0px 22.3363094329834px 17.869047164916992px 0px rgba(0, 0, 0, 0.04),
+    0px 41.777610778808594px 33.422088623046875px 0px rgba(0, 0, 0, 0.05),
+    0px 100px 80px 0px rgba(0, 0, 0, 0.07);
+  align-items: center;
+}
+
+.cards .card button {
+  margin: 0 auto;
+  width: fit-content;
+  padding: 12px 20px;
+  background-color: var(--main-color);
+  text-transform: capitalize;
+  font-size: 18px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.cards .card button:hover {
+  transition: 0.5s linear;
+  background: #ff8833;
+}
+
+.cards .card h2 {
+  margin-bottom: 12px;
+}
+
+.cards .card p {
+  margin-bottom: 12px;
+  line-height: 26px;
+}
+
+.cards .card img {
+  width: 76.469px;
+  height: 76.47px;
+}
+/* VISION SECTION */
+.custom-video {
+  border: 2px solid #ccc; /* Add a border around the video player */
+  border-radius: 8px; /* Optional: Add rounded corners */
+  width: 500px;
+}
+
+.iframe-wrapper {
+  position: relative;
+  width: 600px;
+  height: 350px;
+  /* Cette valeur permet de garder le rapport 16:9 (hauteur/largeur) */
+}
+
+.custom-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 91%;
+  border-radius: 15px;
+  border: none;
+}
+.container-left {
+  height: 300px;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.title {
+  font-size: 22px;
+  padding-bottom: 40px;
+  font-weight: 500;
+  line-height: 150%;
+  color: var(--blue-color);
+}
+.text {
+  line-height: 200%;
+  /* opacity: 0.5; */
+  color: var(--gry-color);
+}
+.left .button {
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid #888;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  letter-spacing: 1.5px;
+}
+.left .button:hover {
+  background-color: var(--main-color);
+  transition: 0.7s;
+  border-color: var(--main-color);
+}
+/* TESTOMONIALS SECTION */
+
+#sectionTitle {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+#sectionTitle > span {
+  color: #a7a7a9;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  justify-content: space-between;
+}
+
+.testmonialBox {
+  display: flex;
+  align-items: self-start;
+  gap: 15px;
+  width: 48%;
+  margin-bottom: 40px;
+}
+
+.testmonial {
+  margin-left: 10px;
+}
+
+.testmonial > p {
+  color: #0b1b34;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  padding: 0;
+  margin: 0;
+}
+
+.testmonial a {
+  text-decoration: none;
+  color: #a7a7a9;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px; /* 185.714% */
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  position: relative;
+}
+.testmonial a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  top: 100%;
+  left: 0%;
+  background: var(--main-color);
+}
+
+.testmonialBox img {
+  border-radius: 10px;
+}
+/* TEAM SECTION */
+.team-section {
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: start;
+  align-items: center;
+
+  width: 100%;
+  /* background: #d2aeae; */
+}
+.head-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.cards-container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.card-container {
+  /* padding: 20px; */
+  width: 30%;
+  height: 260px;
+  /* background: #ffffff49; */
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1.5px solid #ebeaed;
+  z-index: 1000;
+}
+.cards-container .card-container .card {
+  align-self: center;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  flex-direction: column;
+  /* border: 1px solid var(--gry-color); */
+}
+.profile {
+  margin-top: 15px;
+  text-align: center;
+  /* padding: 20px; */
+  background-color: #ffffff;
+  /* background-image: url("./assets/profile1.jpg"); */
+  background-size: cover;
+  background-position: center;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* max-width: 300px; */
+  /* margin: 50px auto;  */
+}
+
+.profile img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.card .profile-name {
+  color: var(--blue-color);
+  font-style: 22px;
+  font-weight: 700;
+}
+.card .profile-job {
+  color: var(--gry-color);
+  font-style: 22px;
+  /* font-weight: 700; */
+  letter-spacing: 2px;
+}
+.socail-container {
+  margin-top: 15px;
+  align-self: flex-end;
+  display: flex;
+  justify-content: space-evenly;
+  /* padding: 15px; */
+  border-top: 1.5px solid #ebeaed;
+
+  width: 100%;
+}
+.socail-container button {
+  padding: 10px;
+  width: 100%;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  font-size: 18px;
+  letter-spacing: 1.5px; /* 158.333% */
+  position: relative;
+}
+.icon {
+  position: relative;
+  /* width: 100%; */
+  /* background: #000; */
+}
+.socail-container .icon::after {
+  position: absolute;
+  content: "";
+  width: 1.5px;
+  height: 100%;
+  background-color: #ebeaed;
+  right: 0;
+  top: 0;
+}
+/* SUBSCRIBE SECTION */
+.subscribe-section .content-container {
+  margin: 45px auto;
+}
+.subscribe-section .content-container p {
+  width: 100%;
+}
+table {
+  padding: 25px;
+  /* background: #eab8b8; */
+}
+
+td:nth-child(2) {
+  display: none;
+}
+.email-input {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 25px 40px;
+  border-radius: 50px;
+  border: 0.5px solid var(--gry-color);
+  width: 90%;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+.email-input::placeholder {
+  color: #000;
+  opacity: 0.7;
+  font-size: 18px;
+}
+
+.card {
+  text-transform: capitalize;
+}
+
+.email-input:focus {
+  outline: none;
+}
+.td-btn {
+  position: relative;
+  padding: 0;
+}
+.subscribe-btn {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 12px 20px;
+  border: 1px solid black;
+  background-color: var(--main-color);
+  color: white;
+  border: none;
+  text-transform: capitalize;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 10px;
+  width: 100%;
+  color: #fff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28.5px; /* 158.333% */
+}
+.subscribe-btn:hover {
+  transition: 0.5s linear;
+  background: #ff8833;
+}
+
+/**
+ * ----------------------------------------
+ * animation rotate-90-cw
+ * ----------------------------------------
+ */
+/* .rotate-90-cw {
+  -webkit-animation: rotate-90-cw 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: rotate-90-cw 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+} */
+
+/* ----------------------------------------------
+ * Generated by Animista on 2023-7-26 14:42:30
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+@-webkit-keyframes rotate-90-cw {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+}
+@keyframes rotate-90-cw {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+}
+
+footer {
+  display: flex;
+  margin: 10px 40px;
+  justify-content: space-between;
+}
+footer .box-1 {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+footer .box-2 ul {
+  display: flex;
+  list-style: none;
+  gap: 35px;
+}
+
+footer span {
+  color: #0b1b34;
+  font-weight: 500;
+}
